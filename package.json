@@ -1,0 +1,33 @@
+{
+    "name": "nuxt-starter-kit",
+    "private": true,
+    "type": "module",
+    "engines": {
+        "node": ">=24"
+    },
+    "scripts": {
+        "dev": "nuxt dev",
+        "build": "nuxt build",
+        "preview": "nuxt preview",
+        "postinstall": "nuxt prepare",
+        "test": "vitest run",
+        "lint": "nuxt typecheck && eslint . && prettier --check .",
+        "format": "prettier --write ."
+    },
+    "dependencies": {
+        "nuxt": "^4.6.1",
+        "vue": "^3.5.43",
+        "vue-router": "^5.4.0"
+    },
+    "devDependencies": {
+        "@nuxt/eslint": "^1.17.0",
+        "@nuxt/test-utils": "^4.3.3",
+        "@types/node": "^24.19.2",
+        "eslint": "^10.12.0",
+        "eslint-config-prettier": "^10.1.8",
+        "prettier": "^3.9.10",
+        "typescript": "^6.0.3",
+        "vitest": "^5.0.4",
+        "vue-tsc": "^3.3.13"
+    }
+}
