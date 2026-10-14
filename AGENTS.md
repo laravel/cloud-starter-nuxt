@@ -1,6 +1,6 @@
 # Nuxt starter kit
 
-A minimal [Nuxt 4](https://nuxt.com) app with server-side rendering and TypeScript. It has one page, a welcome screen, and one test. It's a starting point: build the app the user asks for on top of it.
+A minimal [Nuxt 4](https://nuxt.com) app with server-side rendering, TypeScript, and Tailwind CSS. It has one page, a welcome screen, and one test. It's a starting point: build the app the user asks for on top of it.
 
 ## Commands
 
@@ -21,6 +21,7 @@ Run `npm test` and `npm run lint` after every change. Both must pass.
 - `app/pages/` holds pages. Each `.vue` file becomes a route. `app/pages/index.vue` is the Laravel Cloud welcome screen; replace it with the app's own home page.
 - `app/app.vue` is the root component. It renders the current page with `<NuxtPage />`.
 - `server/api/` is where API routes go, as `defineEventHandler` files. It doesn't exist yet.
+- `app/assets/css/main.css` imports Tailwind CSS, which the `@tailwindcss/vite` plugin in `nuxt.config.ts` compiles.
 - `public/` holds files served from the site root.
 - `tests/` holds Vitest tests. They use `@nuxt/test-utils/e2e`, which builds the app, serves it, and fetches pages, so each run takes a few seconds.
 
