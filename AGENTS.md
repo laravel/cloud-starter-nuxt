@@ -1,6 +1,6 @@
 # Nuxt starter kit
 
-A minimal [Nuxt 4](https://nuxt.com) app with server-side rendering and TypeScript. It has one page and one test. It's a starting point: build the app the user asks for on top of it.
+A minimal [Nuxt 4](https://nuxt.com) app with server-side rendering and TypeScript. It has one page, a welcome screen, and one test. It's a starting point: build the app the user asks for on top of it.
 
 ## Commands
 
@@ -18,7 +18,7 @@ Run `npm test` and `npm run lint` after every change. Both must pass.
 
 ## Structure
 
-- `app/pages/` holds pages. Each `.vue` file becomes a route, and `app/pages/index.vue` is the home page.
+- `app/pages/` holds pages. Each `.vue` file becomes a route. `app/pages/index.vue` is the Laravel Cloud welcome screen; replace it with the app's own home page.
 - `app/app.vue` is the root component. It renders the current page with `<NuxtPage />`.
 - `server/api/` is where API routes go, as `defineEventHandler` files. It doesn't exist yet.
 - `public/` holds files served from the site root.
@@ -68,5 +68,7 @@ Run background work as a custom worker background process on the environment, wi
 
 ### Managing the app
 
-Use the Laravel Cloud MCP server to deploy, read logs, change environment variables, and attach resources. Cloud's documentation for agents is at https://laravel.com/cloud/docs/llms.txt, and runtime details are at https://laravel.com/cloud/docs/runtimes.
+Use the [Laravel Cloud CLI](https://laravel.com/cloud/docs/api/cli) to deploy, read logs, change environment variables, and attach resources. It needs PHP 8.3 or later and Composer. Install it with `composer global require laravel/cloud-cli`, then run `cloud skills:install` to add Laravel Cloud skills to your agent. Run `cloud auth`, or set `LARAVEL_CLOUD_TOKEN` where a browser login isn't possible, and pass `-n` to every command so it never waits for input. A Laravel Cloud MCP server is coming and will cover the same tasks.
+
+Cloud's documentation for agents is at https://laravel.com/cloud/docs/llms.txt, and runtime details are at https://laravel.com/cloud/docs/runtimes.
 <!-- cloud:end -->

@@ -3,3 +3,4 @@ package-lock.json
 .nuxt
 .output
 .data
+app/pages/index.vue
