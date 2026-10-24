@@ -18,18 +18,18 @@
         "@tailwindcss/vite": "^4.3.3",
         "nuxt": "^4.6.2",
         "tailwindcss": "^4.3.3",
-        "vue": "^3.5.43",
+        "vue": "^3.5.44",
         "vue-router": "^5.4.0"
     },
     "devDependencies": {
         "@nuxt/eslint": "^1.17.0",
-        "@nuxt/test-utils": "^4.3.3",
+        "@nuxt/test-utils": "^4.3.4",
         "@types/node": "^24.19.2",
-        "eslint": "^10.12.0",
+        "eslint": "^10.13.0",
         "eslint-config-prettier": "^10.1.8",
         "prettier": "^3.9.10",
         "typescript": "^6.0.3",
-        "vitest": "^5.0.4",
+        "vitest": "^5.0.5",
         "vue-tsc": "^3.3.13"
     }
 }
