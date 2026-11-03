@@ -15,9 +15,9 @@
         "format": "prettier --write ."
     },
     "dependencies": {
-        "@tailwindcss/vite": "^4.3.3",
-        "nuxt": "^4.6.3",
-        "tailwindcss": "^4.3.3",
+        "@tailwindcss/vite": "^4.3.4",
+        "nuxt": "^4.6.4",
+        "tailwindcss": "^4.3.4",
         "vue": "^3.5.44",
         "vue-router": "^5.4.0"
     },
@@ -29,7 +29,7 @@
         "eslint-config-prettier": "^10.1.8",
         "prettier": "^3.9.10",
         "typescript": "^6.0.3",
-        "vitest": "^5.0.5",
+        "vitest": "^5.1.0",
         "vue-tsc": "^3.3.14"
     }
 }
